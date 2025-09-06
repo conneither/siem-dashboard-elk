@@ -1,3 +1,4 @@
+# NOTICE: This is a repo is a work in progress, I am in the process of pulling my personal configs and getting additional screenshots. 
 # Custom Honeypot SIEM on AWS (Elasticsearch + Kibana + Logstash)
 
 This project sets up a honeypot (Cowrie) feeding into an ELK stack on AWS EC2. It collects, parses, and visualizes attacker activity in near real time.
