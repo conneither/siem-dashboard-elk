@@ -1,4 +1,4 @@
-# NOTICE: This is a repo is a work in progress, I am in the process of pulling my personal configs and getting additional screenshots. 
+# NOTICE: This is repo is a work in progress, I am in the process of pulling my personal configs and getting additional screenshots. 
 # Custom Honeypot SIEM on AWS (Elasticsearch + Kibana + Logstash)
 
 This project sets up a honeypot (Cowrie) feeding into an ELK stack on AWS EC2. It collects, parses, and visualizes attacker activity in near real time.
@@ -63,7 +63,7 @@ output {
 *[Screenshot of Elasticsearch health + Kibana login]*
 
 ### 3. Install Cowrie + Filebeat (honeypot)
-# Install Cowrie
+##### Install Cowrie
    ```
    sudo adduser cowrie
    su - cowrie
@@ -73,7 +73,7 @@ output {
    source cowrie-env/bin/activate
    pip install -r requirements.txt
    ```
-# Move your system SSH daemon to port 2222
+Move your system SSH daemon to port 2222
    ```bash
    sudo nano /etc/ssh/sshd_config
    ```
@@ -94,7 +94,7 @@ WARNING! Test that it works on another machine (do this before closing your curr
    ssh -p 2222 youruser@yourserver
    ```
 
-# Enable Cowrie to bind port 22 with authbind, then set up systemd service.
+#### Enable Cowrie to bind port 22 with authbind, then set up systemd service.
 
 Install `authbind`:
 
